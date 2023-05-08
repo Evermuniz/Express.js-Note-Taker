@@ -4,7 +4,7 @@ const uuid = require("../helpers/uuid");
 
 notes.get("/", (req, res) => {
   console.info(`${req.method} request received for notes`);
-  readFromFile("../db.json").then((data) => res.json(JSON.parse(data)));
+  readFromFile("./db/db.json").then((data) => res.json(JSON.parse(data)));
 });
 
 
@@ -21,7 +21,7 @@ notes.post("/", (req, res) => {
       note_id: uuid(),
     };
 
-    readAndAppend(newNote, "../db.json");
+    readAndAppend(newNote, "./db.json");
     res.json(``);
   } else {
     res.error("Error in adding note");
