@@ -9,19 +9,19 @@ notes.get("/", (req, res) => {
 
 
 notes.post("/", (req, res) => {
-  console.info(`${req.method} request received to add a tip`);
+  console.info(`${req.method} request received to add a note`);
   console.log(req.body);
 
-  const { noteTitle, noteText } = req.body;
+  const { title, text } = req.body;
 
   if (req.body) {
     const newNote = {
-      noteTitle,
-      noteText,
+      title: title,
+      text: text,
       note_id: uuid(),
     };
 
-    readAndAppend(newNote, "./db.json");
+    readAndAppend(newNote, "./db/db.json");
     res.json(``);
   } else {
     res.error("Error in adding note");
