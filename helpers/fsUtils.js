@@ -1,3 +1,7 @@
+// I used the fsUtils.js file from the bootcamp activity material.
+// Basically using the fs module to read, write, and append to the file
+//Using the util module to return a promise instead of a callback
+
 const fs = require("fs");
 const util = require("util");
 
