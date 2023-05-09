@@ -14,7 +14,7 @@ This application is a simple note taker that uses express.js. Express.js is a no
 
 
 ## Usage
-Open the application hosted on Heroku which will take you to the landing page. Click on Get Started to begin entering your notes. Enter a note title, and the note text. Once you have entered your note text, a save button will appear on the top bar. Click save and the note will move to the left bar and you will be able to enter as many notes as you would like. Click on the delete icon next to each note to delete them from your saved notes. Follow this [link]() to visit the deployed application. 
+Open the application hosted on Heroku which will take you to the landing page. Click on Get Started to begin entering your notes. Enter a note title, and the note text. Once you have entered your note text, a save button will appear on the top bar. Click save and the note will move to the left bar and you will be able to enter as many notes as you would like. Click on the delete icon next to each note to delete them from your saved notes. Follow this [link](https://nameless-sea-71643.herokuapp.com/) to visit the deployed application. 
 
 ![application screenshot](./public/assets/screenshot/app-screenshot.jpeg).
 
